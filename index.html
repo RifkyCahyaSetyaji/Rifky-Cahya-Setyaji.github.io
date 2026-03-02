@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Rifky Cahya Setyaji</title>
+    <style>
+        :root {
+            --primary-dark: #1f2937;
+            --text-main: #374151;
+            --text-muted: #6b7280;
+            --accent: #3b82f6;
+            --bg-body: #f3f4f6;
+        }
+
+        body {
+            background: var(--bg-body);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .cv-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: var(--primary-dark);
+            color: white;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-info h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.2rem;
+            letter-spacing: -0.5px;
+        }
+
+        .header-contact {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: var(--primary-dark);
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        .row {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .left-col {
+            flex: 0 0 250px;
+        }
+
+        .right-col {
+            flex: 1;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 1.05rem;
+            display: block;
+        }
+
+        .date {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            display: block;
+            margin-top: 2px;
+        }
+
+        .sub-title {
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+        ul {
+            margin: 8px 0 0 0;
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skill-category b {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--primary-dark);
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+
+            .cv-container {
+                box-shadow: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv-container">
+        <header class="header">
+            <div class="header-info">
+                <h1>Rifky Cahya Setyaji</h1>
+                <div class="header-contact">
+                    081333229511 &nbsp;|&nbsp; its.rif.cahya@gmail.com &nbsp;|&nbsp; LinkedIn Profile<br>
+                    Lowokwaru, Kota Malang, Jawa Timur
+                </div>
+            </div>
+            <img src="https://siakad.ub.ac.id/dirfoto/foto/foto_2025/255150401111002.jpg" alt="Foto Rifky"
+                class="profile-img">
+        </header>
+
+        <div class="content">
+            <section>
+                <h3>Profil</h3>
+                <p style="text-align: justify; margin-top: 0;">
+                    Mahasiswa Sistem Informasi Universitas Brawijaya dengan minat pada <b>Data Science</b> dan
+                    <b>Cyber Security</b>.
+                    Berpengalaman dalam pengembangan website, administrasi jaringan, serta analisis keamanan sistem.
+                </p>
+            </section>
+
+            <section>
+                <h3>Pengalaman Kerja</h3>
+
+                <div class="row">
+                    <div class="left-col">
+                        <span class="item-title">Tjahaja Laundry</span>
+                        <span class="date">Aug 2025 - Nov 2025</span>
+                    </div>
+                    <div class="right-col">
+                        <span class="sub-title">Web Developer</span>
+                        <ul>
+                            <li>Membuat website company profile WordPress dalam 4 hari.</li>
+                            <li>Menyusun project planning menggunakan Notion meningkatkan efisiensi 15%.</li>
+                            <li>Optimasi SEO meningkatkan visibilitas website sebesar 5%.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left-col">
+                        <span class="item-title">CV Global Solusindo</span>
+                        <span class="date">Jun 2024 - Oct 2024</span>
+                    </div>
+                    <div class="right-col">
+                        <span class="sub-title">Full Stack Developer (Intern)</span>
+                        <ul>
+                            <li>Mengembangkan website Laravel beserta database.</li>
+                            <li>Membuat aplikasi laundry desktop menggunakan Java.</li>
+                            <li>Mengintegrasikan payment gateway Midtrans.</li>
+                            <li>Membangun website administrasi CodeIgniter 3.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Pendidikan</h3>
+                <div class="row">
+                    <div class="left-col">
+                        <span class="item-title">Universitas Brawijaya</span>
+                        <span class="date">2025 - 2028</span>
+                    </div>
+                    <div class="right-col">
+                        <b>S1 Sistem Informasi</b><br>
+                        <span>Aktif dalam UKM Formasi</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left-col">
+                        <span class="item-title">SMK Telkom Malang</span>
+                        <span class="date">2022 - 2025</span>
+                    </div>
+                    <div class="right-col">
+                        <b>Teknik Komputer & Jaringan</b><br>
+                        <span>Organisasi: MPK, PASKATEMA, COMET</span>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Organisasi</h3>
+                <div class="row">
+                    <div class="left-col">
+                        <span class="item-title">Majelis Perwakilan Kelas</span>
+                        <span class="date">2022 - 2025</span>
+                    </div>
+                    <div class="right-col">
+                        <span class="sub-title">Ketua Komisi 4</span>
+                        <ul>
+                            <li>Menyalurkan lebih dari 30 aspirasi siswa.</li>
+                            <li>Membuat 5 video profil MPK.</li>
+                            <li>Memimpin tim beranggotakan 5 orang.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left-col">
+                        <span class="item-title">Paskibraka Telkom Malang</span>
+                        <span class="date">2024 - 2025</span>
+                    </div>
+                    <div class="right-col">
+                        <span class="sub-title">Koordinator Humas</span>
+                        <ul>
+                            <li>Mendapatkan 4 sponsorship untuk event organisasi.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left-col">
+                        <span class="item-title">COMET SMK TELKOM MALANG</span>
+                        <span class="date">2022 - 2025</span>
+                    </div>
+                    <div class="right-col">
+                        <span class="sub-title">Anggota COMET</span>
+                        <ul>
+                            <li>Koordinator Acara Pemilihan Ketua COMET</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>Skills & Penghargaan</h3>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <b>Hard Skills</b>
+                        Project Planning, Risk Management, Cost Control, Business Analysis
+                    </div>
+                    <div class="skill-category">
+                        <b>Soft Skills</b>
+                        Team Leadership, Problem Solving, Critical Thinking, Time Management
+                    </div>
+                    <div class="skill-category">
+                        <b>Penghargaan</b>
+                        Juara 2 PKM KC 2025 • Top 15 BPC PlayBox • Top 10 UI/UX SBY DEV
+                    </div>
+                    <div class="skill-category">
+                        <b>Sertifikat</b>
+                        DigiUp Graphic Design • TEFA Hosting • DBS Full Stack • DBS Machine Learning
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+
+</html>
